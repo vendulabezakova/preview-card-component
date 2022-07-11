@@ -1,0 +1,111 @@
+/*mobile*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: 'Lexend Deca', sans-serif;
+  display: block;
+  align-items: center;
+  background-color: hsl(0, 0%, 95%);
+  position: absolute;
+}
+
+h2 {
+  color: hsl(0, 0%, 95%);
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 38px;
+  text-transform: uppercase;
+}
+
+/*sections*/
+
+section {
+  padding:50px;
+  width: auto;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 10px 0 0;
+}
+
+.suvs{
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0 10px 10px;
+}
+
+/*buttons*/
+
+button {
+  font-family: 'Lexend Deca', sans-serif;
+  padding: 15px 25px;
+  border-radius: 40px;
+  background-color: white;
+  border: none;
+  margin: 20px 0;
+}
+
+.sedans button {
+  color: hsl(31, 77%, 52%);
+}
+
+.suvs button {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury button {
+  color: hsl(179, 100%, 13%);
+}
+
+.attribution {
+  font-size: 11px;
+  color: rgb(73, 73, 73);
+  position: absolute;
+  width: auto;
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+/*desktop*/
+
+@media only screen and (min-width: 865px) {
+
+  body {
+    display: block;
+    padding-top: 15%;
+    width: 950px;
+    position: absolute;
+    left: 23%;
+  }
+
+  .sections {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sedans {
+    border-radius: 10px 0 0 10px;
+  }
+
+  .luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+  }
+
+}
